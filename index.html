@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Javascript</title>
+</head>
+<body>
+    <h1>Inro to Javascript</h1>
+
+        <form name="myForm" onsubmit="return AddNumbers()">
+            Num1: <input type="text" name="num1"> Num2: <input type="text" name="num2">
+            <input type="submit" value="Submit">
+            </form>
+            <p id="add"></p>
+    <script src="Scripts/main.js"></script>
+    
+
+
+
+    <p><button onclick="window.alert('hello')">Click Me</button></p>
+    <p><button onclick="window.prompt('please enter your name')">Click Me</button></p>
+
+    <p><button onclick="document.getElementById('time').innerHTML = Date()">Click to view</button></p>
+    <div id="time"></div>
+    <div id="name"></div>
+
+    <script>
+        function EnterName()
+        {
+           let name = window.prompt('Please enter your name');
+
+           document.getElementById('name').innerHTML = name;
+        }
+    </script>
+    
+
+</body>
+</html>
